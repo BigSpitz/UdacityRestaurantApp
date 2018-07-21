@@ -16,13 +16,13 @@
 <body>
   <header>
     <nav>
-      <h1><a href="/">Restaurant Reviews</a></h1>
+      <h1><a href="/" role="navigation" aria-label='link to home page'>Restaurant Reviews</a></h1>
     </nav>
   </header>
 
-  <main id="maincontent">
-    <section id="map-container" tabIndex="-1">
-      <div id="map" tabIndex="-1"></div>
+  <main id="maincontent" role="main">
+    <section id="map-container" tabIndex="-1" aria-label="map container">
+      <div id="map" tabIndex="-1" aria-label="map for the restaurants"></div>
     </section>
     <section class='filter-bar' aria-label='restaurant search'>
       <div class="filter-options">
@@ -38,7 +38,7 @@
         </select>
 
       </div>
-      <div class="restaurants">
+      <div class="restaurants" aria-label='restaurant search results'>
         <ul id="restaurants-list"></ul>
       </div>
     </section>

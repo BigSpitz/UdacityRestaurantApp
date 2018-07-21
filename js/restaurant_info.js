@@ -99,7 +99,7 @@ fillRestaurantHTML = (restaurant = self.restaurant) => {
 
   const cuisine = document.getElementById('restaurant-cuisine');
   cuisine.innerHTML = restaurant.cuisine_type;
-  
+
 
   // fill operating hours
   if (restaurant.operating_hours) {
@@ -171,6 +171,8 @@ createReviewHTML = (review) => {
   const comments = document.createElement('p');
   comments.innerHTML = review.comments;
   li.appendChild(comments);
+  li.setAttribute('role', 'list-item');
+  li.setAttribute('aria-label', 'restaurant review');
 
   return li;
 }
